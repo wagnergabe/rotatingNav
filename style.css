@@ -66,6 +66,12 @@ body {
     transform-origin: top left;
 }
 
+.conainer.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+
 nav {
     position: fixed;
     bottom: 40px;
@@ -93,9 +99,12 @@ nav ul li i {
 
 nav ul li + li {
     margin-left: 15px;
+    transform: translateX(10%)
+
 }
 nav ul li + li + li {
     margin-left: 30px;
+    transform: translateX(20%)
 }
 /* The li's after one another will stick out further than the last. will make an angle */ 
 
